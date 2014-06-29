@@ -1,0 +1,38 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4{
+	font-family: 'Open Sans', sans-serif;
+}
+
+header{
+	background-color: #c0392b;
+	padding: 25px;
+	color: #FFF;
+	margin-bottom: 20px;
+}
+
+.disciplina{
+	color: #c0392b;
+	font-weight: 700;
+	padding: 10px;
+}
+
+.facebook{
+	background-color: #3B5998;
+	color: #FFF;
+	text-align: center;
+	padding: 20px;
+}
+
+.facebook a{
+	color: #FFF;
+}
+
+footer{
+	margin-top: 25px;
+	background-color: #ecf0f1;
+	color: #7f8c8d;
+	padding: 10px;
+	font-size: 12px;
+}
