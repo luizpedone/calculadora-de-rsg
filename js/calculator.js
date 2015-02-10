@@ -1,6 +1,5 @@
-calculateButton = document.getElementById('calcular');
-resultOutputElement = document.getElementById('resultado');
-
+calculateButton = document.getElementById('calculateButton');
+resultPlaceholder = document.getElementById('resultPlaceholder');
 var sheepItForm = $('#sheepItForm').sheepIt({
     separator: '',
     allowRemoveLast: true,
@@ -15,19 +14,19 @@ var sheepItForm = $('#sheepItForm').sheepIt({
 
 calculateButton.addEventListener('click', function(){
     forms = sheepItForm.getForms();
-    credits = multiplier = 0;
+    credits = grade = 0;
 
     for (x in forms) {
-        credits = parseInt($('#carga_'+x).val()) + credits;
-        multiplier = parseInt($('#conceito_'+x).val()) * parseInt($('#carga_'+x).val()) + multiplier;
+        credits = parseInt($('#workload_'+x).val()) + credits;
+        grade = parseInt($('#grade_'+x).val()) * parseInt($('#workload_'+x).val()) + grade;
     }
 
-    score = multiplier / credits;
+    score = grade / credits;
 
     if (score) {
-        resultOutputElement.innerHTML = '<div class="alert alert-success">O seu RSG é: <h3>' + parseFloat(score).toFixed(1) + '</h3></div>';
+        resultPlaceholder.innerHTML = '<div class="alert alert-success">O seu RSG é: <h3>' + parseFloat(score).toFixed(1) + '</h3></div>';
     }
     else {
-        resultOutputElement.innerHTML = '<div class="alert alert-danger">Você deixou algum campo vazio. Preencha-o ou remova a disciplina para realizar o cáculo.</div>';
+        resultPlaceholder.innerHTML = '<div class="alert alert-danger">Você deixou algum campo vazio. Preencha-o ou remova a disciplina para realizar o cáculo.</div>';
     }
 });

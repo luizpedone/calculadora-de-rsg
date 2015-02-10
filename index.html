@@ -29,8 +29,8 @@
                 </div>
                 <div id="sheepItForm_template" class="form-inline" style="padding: 5px;">
                     <div class="text-center">
-                        <div class="disciplina">Disciplina #<span id="sheepItForm_label"></span></div>
-                        <select id='conceito_#index#' name='conceito_#index#' class='form-control'>
+                        <div class="course">Disciplina #<span id="sheepItForm_label"></span></div>
+                        <select id='grade_#index#' name='grade_#index#' class='form-control'>
                             <option value=''>-- Conceito --</option>
                             <option value='5'>A</option>
                             <option value='4'>B</option>
@@ -39,7 +39,7 @@
                             <option value='1'>E</option>
                             <option value='0'>F</option>
                         </select>
-                        <select id='carga_#index#' name='carga_#index#' class='form-control'>
+                        <select id='workload_#index#' name='workload_#index#' class='form-control'>
                             <option value=''>-- Carga Horária --</option>
                             <option value='15'>15h</option>
                             <option value='30'>30h</option>
@@ -62,9 +62,9 @@
               <div id="sheepItForm_noforms_template">Nenhuma disciplina.</div>
 
               <div class="text-center" style='padding: 10px;'>
-                <a id='calcular' class="btn btn-success btn-lg"><span class='glyphicon glyphicon-ok'></span> Calcular</a>
+                <input type="button" id='calculateButton' class="btn btn-success btn-lg" value="Calcular"/>
             </div>
-            <div class="text-center" id='resultado'></div>
+            <div class="text-center" id='resultPlaceholder'></div>
             <div class='facebook'>
                 <a href="http://www.facebook.com/sharer/sharer.php?s=100&amp;p[url]=http://rsg.luizpedone.com/&amp;p[images][0]=&amp;p[title]=Calculadora de RSG&amp;p[summary]=Calcule o seu RSG de maneira simples e ágil." target="alt"><span class='glyphicon glyphicon-share'></span> Compartilhar no Facebook</a>
             </div>
