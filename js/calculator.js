@@ -1,5 +1,6 @@
 calculateButton = document.getElementById('calculateButton');
 resultPlaceholder = document.getElementById('resultPlaceholder');
+
 var sheepItForm = $('#sheepItForm').sheepIt({
     separator: '',
     allowRemoveLast: true,
@@ -24,9 +25,8 @@ calculateButton.addEventListener('click', function(){
     score = grade / credits;
 
     if (score) {
-        resultPlaceholder.innerHTML = '<div class="alert alert-success">O seu RSG é: <h3>' + parseFloat(score).toFixed(1) + '</h3></div>';
-    }
-    else {
+        resultPlaceholder.innerHTML = '<div class="alert alert-success">O seu RSG é: <h3>' + parseFloat(score).toFixed(2) + '</h3></div>';
+    } else {
         resultPlaceholder.innerHTML = '<div class="alert alert-danger">Você deixou algum campo vazio. Preencha-o ou remova a disciplina para realizar o cáculo.</div>';
     }
 });
