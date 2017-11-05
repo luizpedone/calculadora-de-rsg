@@ -1,0 +1,22 @@
+{
+  "name": "calculadora-de-rsg",
+  "homepage": "https://github.com/luizpedone/calculadora-de-rsg",
+  "authors": [
+    "Luiz Felipe Pedone <luiz.pedone@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.10.2",
+    "sheepit": "https://github.com/mdelrosso/sheepit.git#jquery.sheepItPlugin-v1.1.1"
+  }
+}
