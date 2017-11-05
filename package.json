@@ -1,0 +1,29 @@
+{
+  "name": "calculadora-de-rsg",
+  "version": "1.0.0",
+  "description": "Calculadora de RSG para alunos da UFMG.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizpedone/calculadora-de-rsg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luizpedone/calculadora-de-rsg/issues"
+  },
+  "homepage": "https://github.com/luizpedone/calculadora-de-rsg#readme",
+  "dependencies": {
+    "bower": "^1.8.2",
+    "node-minify": "^2.4.0"
+  },
+  "devDependencies": {
+    "jasmine": "^2.8.0"
+  }
+}
